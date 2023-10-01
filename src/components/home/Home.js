@@ -10,6 +10,19 @@ import plastic from '../../assets/plastic.jpg'
 import project from '../../assets/projet.jpg'
 import events from '../../assets/events.jpg'
 
+import dechetSolide from '../../assets/dechetsolide.jpg'
+import dechetLiquide from '../../assets/dechetliquide.jpg'
+
+import pecheurs from '../../assets/pecheurs.jpg'
+import industriel from '../../assets/industriel.jpg'
+import individus from '../../assets/individus.jpg'
+
+import sol1 from '../../assets/sol1.png'
+import sol2 from '../../assets/sol2.png'
+import sol3 from '../../assets/sol3.png'
+import sol4 from '../../assets/sol4.png'
+import sol5 from '../../assets/sol5.png'
+import sol6 from '../../assets/sol6.png'
 
 
 
@@ -102,9 +115,61 @@ const Home = () => {
         6 Événements seront organisés dans les ports de pêche de la Goulette, Kélibia, Bizerte, Mahdia, Teboulba et Sfax visant à sensibiliser les pêcheurs, les industriels spécialisés dans la transformation des produits de pêche et les distributeurs, à utiliser les déchets des activités de pêche pour les recycler.
       </p>
       </div>
-      
-    
     </section>
+
+    <section className="section">
+      <h2 className='sectionTitle'>Les déchets générés</h2>
+      <ul className='sectionUl'>
+          <li className='sectionUlLi'>
+            
+                 Déchets solides 
+                 <span className='sectionUlLiSpan'>( plus de 1000 m²/an)</span>
+           <img src={dechetSolide} className='sectionUlLiImg' alt="" />
+          </li>
+          <li className='sectionUlLi'>
+
+                  Déchets liquides 
+                  <span className='sectionUlLiSpan'>(Entre 1000 et 2000 m²/an)</span>
+            <img src={dechetLiquide} className='sectionUlLiImg' alt="" />
+          </li>
+      </ul>
+     
+    </section>
+
+    <section className="section">
+      <h2 className='sectionTitle'>Les générateurs de déchets </h2>
+      <ul className='sectionUl'>
+        <li className='sectionUlGen'>
+          <span className='sectionGenTitle'>Pêcheurs</span>
+           <img src={pecheurs} className='sectionGenImg' alt="" />
+        </li>
+
+        <li className='sectionUlGen'>
+          <span className='sectionGenTitle'>Industriels</span>
+           <img src={industriel} className='sectionGenImg' alt="" />
+        </li>
+
+        <li className='sectionUlGen'>
+          <span className='sectionGenTitle'>individuels</span>
+           <img src={individus} className='sectionGenImg' alt="" />
+        </li>
+      </ul>
+    </section>
+
+    <section className="section">
+      <h2 className='sectionTitle'>Solutions proposées</h2>
+      <div className='sectionSol'>
+        <img src={sol1} alt="" className='sectionSolImg' />
+        <img src={sol2} alt="" className='sectionSolImg' />
+        <img src={sol3} alt="" className='sectionSolImg' />
+        <img src={sol4} alt="" className='sectionSolImg' />
+        <img src={sol5} alt="" className='sectionSolImg' />
+        <img src={sol6} alt="" className='sectionSolImg' />
+
+       
+      </div>
+    </section>
+    
 
   </article>
   )
